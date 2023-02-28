@@ -111,7 +111,7 @@ while (handShakeCount < N):
 # Send a sequence of data messages to all other processes 
 for msgNumber in range(0, N_MSGS):
   # Wait some random time between successive messages
-  time.sleep(random.randrange(10,100)/1000)
+  #time.sleep(random.randrange(10,100)/1000)
   msg = (myself, msgNumber)
   msgPack = pickle.dumps(msg)
   for addrToSend in PEERS:
